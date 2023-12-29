@@ -7,7 +7,7 @@
     # Els grups s'enumeren d'1 en endavant i, si hi ha fitxer y, les numeracions segueixen i no tornen a comensar.
     # A la paleta: 0- lliure, 1- arqub (per defecte), 2- arqub en blanc i negre, 3- rainbow, 4- heat.colors, 5- terrain.colors, 6- topo.colors, 7- cm.colors.
     # Si la paleta es 0 vol dir que s'escullen els colors. La manera es, per exemple, paleta0 = c("red", "blue").
-    # El grup ha de ser un as.factor i la llegenda, si no es el grup, as.character, pero la rutina ja ho vigila. El nom es pel grafic de les funcions discriminants. Per defecte, no n'hi ha (NA).
+    # El grup ha de ser un as.factor i la llegenda, si no es el grup, as.character, pero la rutina ja ho vigila. El nom es pel grafic de les funcions discriminants. Per defecte, no n'hi ha (NA). Si n'hi ha, s'afegeix n de xclr
     # color es refereix al que tenen les barres del diagrama sobre les variancies entre grups (maxim 10).
     # simbol es pels simbols que s'utilitzaran per representar els individus, per defecte (simbol = 0) es 21. Si simbol <> 0, llavors s'agafa
     # el llistat de simbols que sigui, per exemple, simbol0 = c(21, 24). Els simbols han d'anar entre el 21 i el 25. En cas que hi hagi dues categoriques (que ggrupx sigui diferent de grupx) simbol0 es obligatori per posar els simbols de la segona categorica.
@@ -108,8 +108,8 @@
     # escollim el titol de l'eix y segons idioma
     if (idioma == 1) {titoly <- as.character("Variàncies entre grups")}
     if (idioma == 2) {titoly <- as.character("Varianzas entre grupos")}
-    if (idioma == 3) {titoly <- as.character("Variances inter-groupe")}
-    if (idioma == 4) {titoly <- as.character("Between-group variances")}
+    if (idioma == 3) {titoly <- as.character("Between-group variances")}
+    if (idioma == 4) {titoly <- as.character("Variances inter-groupe")}
     # faig el grafic i el salvo
     # primer miro les mides de lletres segons funcions discriminants
     if (npcs > 8) {
