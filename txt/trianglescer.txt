@@ -2,7 +2,7 @@
   function(x, grup = 0, idioma = 1, paleta = 1, ordenar = 1, llegenda = grup, encerclat = 1, mida = 0.8, color = "gray75", paleta0 = NA)
   {
     # Fa els tres triangles del fitxer x. Idioma: 1- catala, 2- castella, 3- angles, 4- frances
-    # Si grup = 0 (per defecte) s'interpreta que no es fan grups per colors. Si hi ha grups, cal especificar a quina columna hi ha el factor de grup.
+    # Si grup = 0 (per defecte) s'interpreta que no es fan grups per colors i el color ve donat per color. Si hi ha grups, cal especificar a quina columna hi ha el factor de grup i cal utilizar paleta.
     # A la paleta: 0- lliure, 1- arqub (per defecte), 2- arqub en blanc i negre, 3- rainbow, 4- heat.colors, 5- terrain.colors, 6- topo.colors, 7- cm.colors.
     # Si la paleta es 0 vol dir que s'escullen els colors. La manera es, per exemple, paleta0 = c("red", "blue").
     # A ordernar, per defecte es 1- no. Si es posa 2 ordena el fitxer segons el factor de grup.
