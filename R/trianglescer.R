@@ -207,7 +207,7 @@
         text(60, 82.272413, labels = expression(bold("SiO"["2"])), pos = 4, cex = 1.4)
         text(-5, 5, labels = expression(bold("CaO")), pos = 2, cex = 1.4)      
         # Etiquetes de les fases
-        text(c(50, 27.2, 46.9, 69.4, 35.4, 77.6, 44.96), c(89.2006162, 41.6, 45.2, 49.8, 37, 35, 31), labels=c("Qz", "Wo", "Di", "En", "Ak", "Fo", "Mtc"), cex = 1, font = 2)      
+        text(c(50, 27.2, 46.9, 69.4, 35.4, 77.6, 44.96), c(89.2006162, 41.6, 45.2, 49.8, 37, 35, 31), labels=c(expression(bold(Qz)), expression(bold(Wo)), expression(bold(Di)), expression(bold(En)), expression(bold(paste(ring(A),k))), expression(bold(Fo)), expression(bold(Mtc))), cex = 1, font = 2)      
         # Calcul dels punts dels individus
         punts[ , 1] <- x$"MgO"
         punts[ , 2] <- x$"SiO2"
